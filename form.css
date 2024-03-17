@@ -1,0 +1,138 @@
+*{
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+    
+}
+
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+section{
+    padding: 0 7%;
+    padding-top: 7.5rem;
+    padding-bottom: 3rem;
+    min-height: 100vh;
+}
+
+/* .service{
+    background: rgb(100, 241, 223);
+} */
+
+
+.service::before{
+    content:"";
+    position: absolute;
+    background: url('../') no-repeat center center/cover;
+    height: 1060px;
+    width: 100%;
+    z-index: -1;
+    opacity: 1.89;   
+    top: 0px;
+    left: 0px;
+}
+.service .heading{
+    color: black;
+    font-size: 25px;
+    font-weight: 300px;
+    text-align: center;
+}
+
+.service .row form input[type=button]{
+    background-color: #444;
+    border: none;
+    color: white;
+    padding: 3px 6px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.service .row{
+    display: flex;
+    flex-wrap: wrap;
+    border: .1rem solid rgba(0, 0, 0, .2);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+.service .row form{
+    flex: 1 1 40rem;
+    padding: 2rem;
+}
+
+.service .row form .inputBox{
+    position: relative;
+}
+
+.service .row form .radio h4{
+    color: black;
+    font-size: 15px;
+    font-weight: 200;
+    text-align: center;
+}
+
+.service .row form .radio h2{
+    color: black;
+    font-size: 15px;
+    font-weight: 200;
+    text-align: left;
+}
+.service .row form .radio input{
+    align-items: center;
+    margin: 1.5rem 0;
+    padding: .7rem 1rem;
+    color: #666;
+    text-transform: none;
+    border: .1rem solid rgba(0, 0, 0, .2);
+}
+
+.service .row form .inputBox input{
+    width: 100%;
+    margin: 1.5rem 0;
+    padding: .7rem 1rem;
+    font-size: 1.7rem;
+    color: #666;
+    border: .1rem solid rgba(0, 0, 0, .2);
+    text-transform: none;
+}
+
+.service .row form .radio span{
+    color: #444;
+    top: 2.4rem; left: 1rem;
+    font-size: 1.5rem;
+}
+
+.service .row form .inputBox label{
+    font-size: 1.5rem;
+    position: absolute;
+    top: 2.4rem; left: 1rem;
+    color: #444;
+}
+
+.service .row form .inputBox input:focus ~ label,
+.service .row form .inputBox input:valid ~ label{
+    top: -.7rem; left: 0;
+    color: var(--orange);
+}
+.btn{
+   color: white;
+   background-color: black;
+   padding: 8px 10px;
+   font-size: 20px;
+   border: 2px solid white; 
+   border-radius: 10px;
+   cursor: pointer;
+}
+.submitmsg{
+    font-size: 17px;
+    text-align: center;
+    font-family: monospace;
+    color: green;
+}

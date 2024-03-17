@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Service Taking Form</title>
+    <link href="form.css" rel="stylesheet">
+</head>
+<body>
+    
+    <section class="service">
+
+        <h1 class="heading">Service Taking Form</h1>
+        
+        <h2>Enter Your Details</h2>
+        <div class="row">
+            <form action="form.php" method="post">
+            <div class="inputBox">
+                <input type="text" name="name"required>
+                <label>Name</label>
+            </div>
+            <div class="inputBox">
+                <input type="phone" name="phone"required>
+                <label>Contact Number</label>
+            </div>
+            <div class="inputBox">
+                <input type="address" name="address"required>
+                <label>Address</label>
+            </div>
+            <div class="inputBox">
+                <input type="email" name="email"required>
+                <label>E-mail Id</label>
+            </div>
+            <div class="radio">
+                <h4>Select Service</h4>
+                <div>
+                    <input type="radio" name="service"  values="v" required><span>Vehicals</span>
+                </div>
+                <div>
+                    <input type="radio" name="service" values="h" required><span>Home Appliances</span>
+                </div>
+                <div>
+                    <input type="radio" name="service" values="p" required><span>Plumbing</span>
+                </div>
+                <div>
+                    <input type="radio" name="service" values="e" required><span>Electricity</span>
+                </div>
+                <div>
+                    <input type="radio" name="service" values="c" required><span>CCTV & Camera</span>
+                </div>
+                <div>
+                    <input type="radio" name="service" values="f" required><span>Furniture</span>
+                </div>
+                <div>
+                    <input type="radio" name="service" values="i" required><span>Interior Design</span>
+                </div>
+                <div>
+                    <input type="radio" name="service" values="s" required><span>Smartphone & Telephone</span>
+                </div>
+                <div>
+                    <input type="radio" name="service" values="d" required><span>Desktop & Laptop</span>
+                </div>
+                <div>
+                    <input type="radio" name="service" values="el" required><span>Electronics</span>
+                </div>
+            </div>
+    
+            <div class="inputBox">
+                <input type="text" name="proname" required>
+                <label>Product Name / Vehical Name</label>
+            </div>
+
+            <div class="inputBox">
+                <input type="text" name="desc" required>
+                <label>Description of Problem</label>
+            </div>
+
+            <button class="btn">Submit</button>
+
+        </form>
+        
+            
+        </div>
+
+
+    </section>
+
+
+</body>
+</html>

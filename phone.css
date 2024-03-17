@@ -1,0 +1,6 @@
+#home::before{
+    height: 680px;
+}
+.home .image img{
+    height: 100px;
+}
